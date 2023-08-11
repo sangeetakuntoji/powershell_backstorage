@@ -18,9 +18,8 @@ jobs:
               with:
                 inlineScript: |
                   Install-Module -Name Az -Repository PSGallery -Force 
-                   # RG creation
-
-                    New-AzResourceGroup -Name 'skywave-rg' -Location 'South India'
+   
+                   $rgname = New-AzResourceGroup -Name 'skywave-rg' -Location 'South India'
 
                   # Storage Account creation
 
