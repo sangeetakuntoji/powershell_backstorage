@@ -1,7 +1,7 @@
 on:
     push:
       branches: [ dev-branch ]
-     name: storageaccount
+     name: storageaccount-container
     jobs:
         PowerShellDemo:
           name: "PowerShell Demo"
