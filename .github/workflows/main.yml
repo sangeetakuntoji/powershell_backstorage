@@ -32,6 +32,5 @@ jobs:
                   ## Get the storage account context  
                    $ctx=$storageAcc.Context      
     
-                   New-AzStorageContainer -Name 'skywavecontainer' -Context $ctx -Permission Container $rg = New-AzResourceGroup -Name 'sample-rg' -Location 'eastus'
-                   New-AzStorageAccount -ResourceGroupName $rg.Name -Location $rg.Location -Name 'superawesomedemosa01' -SkuName Standard_LRS
+                   New-AzStorageContainer -Name 'skywavecontainer' -Context $ctx -Permission Container 
                 azPSVersion: "latest"
