@@ -18,6 +18,6 @@ jobs:
               with:
                 inlineScript: |
                   Install-Module -Name Az -Repository PSGallery -Force 
-                  $rg = New-AzResourceGroup -Name 'New Resource Group' -Location 'West US 2'
-                  New-AzStorageAccount -ResourceGroupName $rg.Name -Location $rg.Location -Name 'superawesomedemosa' -SkuName Standard_LRS
+                  $rg = New-AzResourceGroup -Name 'sample-rg' -Location 'eastus'
+                  New-AzStorageAccount -ResourceGroupName $rg.Name -Location $rg.Location -Name 'superawesomedemosa01' -SkuName Standard_LRS
                 azPSVersion: "latest"
