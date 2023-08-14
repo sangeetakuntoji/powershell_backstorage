@@ -22,5 +22,5 @@ jobs:
                   New-AzStorageAccount -ResourceGroupName 'skywave-rg' -Location 'South India' -Name 'skywavestorageaccount' -SkuName Standard_LRS
                   $storageAcc=Get-AzStorageAccount -ResourceGroupName 'skywave-rg' -Name 'skywavestorageaccount'
                   $ctx=$storageAcc.Context
-                  New-AzStorageContainer -Name 'skywavecontainer' -Context $ctx -Permission Container  
+                  New-AzStorageContainer -Name 'skywavecontainer' -Context $ctx -Permission Blob  
                 azPSVersion: "latest"
